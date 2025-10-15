@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath 'com.android.tools.build:gradle:8.6.0'
     }
 }
 
@@ -29,6 +29,7 @@ android {
 
     defaultConfig {
         minSdkVersion 24
+        targetSdkVersion 35//flutter.targetSdkVersion
         consumerProguardFiles 'consumer-proguard-rules.pro'
     }
     lintOptions {
@@ -42,5 +43,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.zxing:core:3.3.0'
 //    implementation 'com.huawei.hms:scanplus:1.3.1.300'
-    implementation 'com.huawei.hms:scanplus:2.1.0.300'
+//    implementation 'com.huawei.hms:scanplus:2.1.0.300'
 }
